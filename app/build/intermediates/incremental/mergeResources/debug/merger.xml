@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="18.0.0"><source path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\18.0.0\res"><file path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\18.0.0\res\values\values.xml" qualifiers=""><dimen name="default_gap">16dip</dimen><declare-styleable name="GridLayout">
+
+        <!--
+              support versions. All attributes not present in ViewGroup/View are
+              redefined in the support library namespace.
+        -->
+
+
+        <!--
+        The orientation property is not used during layout. It is only used to
+        allocate row and column parameters when they are not specified by its children's
+        layout parameters. GridLayout works like LinearLayout in this case;
+        putting all the components either in a single row or in a single column -
+        depending on the value of this flag. In the horizontal case, a columnCount
+        property may be additionally supplied to force new rows to be created when a
+        row is full. The rowCount attribute may be used similarly in the vertical case.
+        The default is horizontal.
+        -->
+        <attr name="orientation">
+
+            <!-- Defines an horizontal widget. -->
+            <enum name="horizontal" value="0"/>
+            <!-- Defines a vertical widget. -->
+            <enum name="vertical" value="1"/>
+        </attr>
+        <!-- The maximum number of rows to create when automatically positioning children. -->
+        <attr format="integer" name="rowCount"/>
+        <!-- The maximum number of columns to create when automatically positioning children. -->
+        <attr format="integer" name="columnCount"/>
+        <!--
+        When set to true, tells GridLayout to use default margins when none are specified
+        in a view's layout parameters.
+        The default value is false.
+        See {@link android.widget.GridLayout#setUseDefaultMargins(boolean)}.
+        -->
+        <attr format="boolean" name="useDefaultMargins"/>
+        <!--
+        When set to alignMargins, causes alignment to take place between the outer
+        boundary of a view, as defined by its margins. When set to alignBounds,
+        causes alignment to take place between the edges of the view.
+        The default is alignMargins.
+        See {@link android.widget.GridLayout#setAlignmentMode(int)}.
+        -->
+        <attr name="alignmentMode">
+
+            <!--
+            Align the bounds of the children.
+            See {@link android.widget.GridLayout#ALIGN_BOUNDS}.
+            -->
+            <enum name="alignBounds" value="0"/>
+            <!--
+            Align the margins of the children.
+            See {@link android.widget.GridLayout#ALIGN_MARGINS}.
+            -->
+            <enum name="alignMargins" value="1"/>
+        </attr>
+        <!--
+        When set to true, forces row boundaries to appear in the same order
+        as row indices.
+        The default is true.
+        See {@link android.widget.GridLayout#setRowOrderPreserved(boolean)}.
+        -->
+        <attr format="boolean" name="rowOrderPreserved"/>
+        <!--
+        When set to true, forces column boundaries to appear in the same order
+        as column indices.
+        The default is true.
+        See {@link android.widget.GridLayout#setColumnOrderPreserved(boolean)}.
+        -->
+        <attr format="boolean" name="columnOrderPreserved"/>
+    </declare-styleable><declare-styleable name="GridLayout_Layout">
+
+        <!--
+              support versions. All attributes not present in MarginLayout are
+              redefined in the support library name space.
+        -->
+
+
+        <!-- START MarginLayout layoutparams -->
+
+        <attr name="android:layout_width"/>
+        <attr name="android:layout_height"/>
+        <!--
+              Specifies extra space on the left, top, right and bottom
+              sides of this view. This space is outside this view's bounds.
+        -->
+        <attr name="android:layout_margin"/>
+        <!--
+              Specifies extra space on the left side of this view.
+              This space is outside this view's bounds.
+        -->
+        <attr name="android:layout_marginLeft"/>
+        <!--
+              Specifies extra space on the top side of this view.
+              This space is outside this view's bounds.
+        -->
+        <attr name="android:layout_marginTop"/>
+        <!--
+              Specifies extra space on the right side of this view.
+              This space is outside this view's bounds.
+        -->
+        <attr name="android:layout_marginRight"/>
+        <!--
+              Specifies extra space on the bottom side of this view.
+              This space is outside this view's bounds.
+        -->
+        <attr name="android:layout_marginBottom"/>
+
+        <!-- END MarginLayout layoutparams -->
+
+
+        <!--
+        The row boundary delimiting the top of the group of cells
+        occupied by this view.
+        -->
+        <attr format="integer" name="layout_row"/>
+        <!--
+        The row span: the difference between the bottom and top
+        boundaries delimiting the group of cells occupied by this view.
+        The default is one.
+        See {@link android.widget.GridLayout.Spec}.
+        -->
+        <attr format="integer" min="1" name="layout_rowSpan"/>
+        <!--
+        The column boundary delimiting the left of the group of cells
+        occupied by this view.
+        -->
+        <attr format="integer" name="layout_column"/>
+        <!--
+        The column span: the difference between the right and left
+        boundaries delimiting the group of cells occupied by this view.
+        The default is one.
+        See {@link android.widget.GridLayout.Spec}.
+        -->
+        <attr format="integer" min="1" name="layout_columnSpan"/>
+        <!--
+        Gravity specifies how a component should be placed in its group of cells.
+        The default is LEFT | BASELINE.
+        See {@link android.widget.GridLayout.LayoutParams#setGravity(int)}.
+        -->
+        <attr name="layout_gravity">
+
+            <!-- Push object to the top of its container, not changing its size. -->
+            <flag name="top" value="0x30"/>
+            <!-- Push object to the bottom of its container, not changing its size. -->
+            <flag name="bottom" value="0x50"/>
+            <!-- Push object to the left of its container, not changing its size. -->
+            <flag name="left" value="0x03"/>
+            <!-- Push object to the right of its container, not changing its size. -->
+            <flag name="right" value="0x05"/>
+            <!-- Place object in the vertical center of its container, not changing its size. -->
+            <flag name="center_vertical" value="0x10"/>
+            <!-- Grow the vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill_vertical" value="0x70"/>
+            <!-- Place object in the horizontal center of its container, not changing its size. -->
+            <flag name="center_horizontal" value="0x01"/>
+            <!-- Grow the horizontal size of the object if needed so it completely fills its container. -->
+            <flag name="fill_horizontal" value="0x07"/>
+            <!-- Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. -->
+            <flag name="center" value="0x11"/>
+            <!-- Grow the horizontal and vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill" value="0x77"/>
+            <!--
+             Additional option that can be set to have the top and/or bottom edges of
+             the child clipped to its container's bounds.
+             The clip will be based on the vertical gravity: a top gravity will clip the bottom
+             edge, a bottom gravity will clip the top edge, and neither will clip both edges.
+            -->
+            <flag name="clip_vertical" value="0x80"/>
+            <!--
+             Additional option that can be set to have the left and/or right edges of
+             the child clipped to its container's bounds.
+             The clip will be based on the horizontal gravity: a left gravity will clip the right
+             edge, a right gravity will clip the left edge, and neither will clip both edges.
+            -->
+            <flag name="clip_horizontal" value="0x08"/>
+            <!-- Push object to the beginning of its container, not changing its size. -->
+            <flag name="start" value="0x00800003"/>
+            <!-- Push object to the end of its container, not changing its size. -->
+            <flag name="end" value="0x00800005"/>
+        </attr>
+    </declare-styleable></file></source></dataSet><dataSet config="main"><source path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res"><file name="ic_action_accept" path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\drawable-hdpi\ic_action_accept.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_action_settings" path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\drawable-hdpi\ic_action_settings.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_action_undo" path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\drawable-hdpi\ic_action_undo.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_launcher" path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\drawable-hdpi\ic_launcher.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_action_accept" path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\drawable-mdpi\ic_action_accept.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_action_settings" path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\drawable-mdpi\ic_action_settings.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_action_undo" path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\drawable-mdpi\ic_action_undo.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_launcher" path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\drawable-mdpi\ic_launcher.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_action_accept" path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\drawable-xhdpi\ic_action_accept.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_action_settings" path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\drawable-xhdpi\ic_action_settings.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_action_undo" path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\drawable-xhdpi\ic_action_undo.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_launcher" path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\drawable-xhdpi\ic_launcher.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_action_accept" path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\drawable-xxhdpi\ic_action_accept.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_action_settings" path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\drawable-xxhdpi\ic_action_settings.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_action_undo" path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\drawable-xxhdpi\ic_action_undo.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="ic_launcher" path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\drawable-xxhdpi\ic_launcher.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="activity_button_settings" path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\layout\activity_button_settings.xml" qualifiers="" type="layout"/><file name="activity_ip_settings" path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\layout\activity_ip_settings.xml" qualifiers="" type="layout"/><file name="activity_main" path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\layout\activity_main.xml" qualifiers="" type="layout"/><file name="main" path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\menu\main.xml" qualifiers="" type="menu"/><file name="menu_buttons_settings" path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\menu\menu_buttons_settings.xml" qualifiers="" type="menu"/><file name="menu_ip_settings" path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\menu\menu_ip_settings.xml" qualifiers="" type="menu"/><file path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\values\colors.xml" qualifiers=""><color name="highlighted_text_holo_light">#6633b5e5</color><color name="link_text_light">#0000ee</color><color name="dim_foreground_light">#323232</color><color name="perms_costs_money">#ffffbb33</color><color name="legacy_pressed_highlight">#fffeaa0c</color><color name="keyguard_avatar_nick_color">#ffffffff</color><drawable name="search_bar_default_color">#ff000000</drawable><color name="legacy_selected_highlight">#fff17a0a</color><color name="dim_foreground_light_inverse">#bebebe</color><color name="lockscreen_clock_foreground">#ffffffff</color><color name="holo_red_dark">#ffcc0000</color><drawable name="screen_background_dark">#ff000000</drawable><color name="highlighted_text_dark">#9983CC39</color><color name="transparent">#00000000</color><color name="hint_foreground_light">#808080</color><color name="sliding_tab_text_color_active">@android:color/black</color><color name="dim_foreground_dark_disabled">#80bebebe</color><color name="perms_dangerous_perm_color">#33b5e5</color><color name="sliding_tab_text_color_shadow">@android:color/black</color><color name="background_dark">#ff000000</color><color name="group_button_dialog_pressed_holo_dark">#46c5c1ff</color><color name="lockscreen_owner_info">#ff9a9a9a</color><color name="bright_foreground_disabled_holo_light">#ffb2b2b2</color><color name="dim_foreground_inverse_holo_light">#bebebe</color><color name="holo_green_dark">#ff669900</color><color name="accessibility_focus_highlight">#80ffff00</color><color name="dim_foreground_inverse_disabled_holo_dark">#80323232</color><color name="hint_foreground_holo_light">#808080</color><color name="kg_multi_user_text_active">#ffffffff</color><color name="holo_purple">#ffaa66cc</color><color name="white">#ffffffff</color><drawable name="notification_item_background_color_pressed">#ff454545</drawable><drawable name="screen_background_holo_dark">#ff000000</drawable><color name="dim_foreground_disabled_holo_light">#80323232</color><drawable name="status_bar_opened_default_background">#ff000000</drawable><color name="dim_foreground_holo_light">#323232</color><color name="black">#ff000000</color><color name="keyguard_text_color_soundon">#e69310</color><color name="background_holo_dark">#ff000000</color><color name="keyguard_text_color_unlock">#a7d84c</color><color name="input_method_navigation_guard">#ff000000</color><color name="bright_foreground_disabled_holo_dark">#ff4c4c4c</color><color name="keyguard_text_color_soundoff">#ffffff</color><drawable name="notification_item_background_color">#ff111111</drawable><color name="holo_blue_bright">#ff00ddff</color><color name="legacy_long_pressed_highlight">#ffffffff</color><color name="holo_blue_dark">#ff0099cc</color><color name="bright_foreground_light_disabled">#80000000</color><color name="lighter_gray">#ddd</color><drawable name="screen_background_holo_light">#fff3f3f3</drawable><color name="group_button_dialog_pressed_holo_light">#ffffffff</color><color name="holo_red_light">#ffff4444</color><color name="dim_foreground_holo_dark">#bebebe</color><color name="highlighted_text_holo_dark">#6633b5e5</color><color name="keyguard_avatar_frame_shadow_color">#80000000</color><color name="shadow">#cc222222</color><color name="dim_foreground_light_inverse_disabled">#80bebebe</color><drawable name="screen_background_dark_transparent">#80000000</drawable><color name="bright_foreground_light">@android:color/background_dark</color><drawable name="selected_day_background">#ff0092f4</drawable><color name="keyguard_text_color_decline">#fe0a5a</color><color name="group_button_dialog_focused_holo_dark">#2699cc00</color><color name="holo_orange_light">#ffffbb33</color><color name="perms_dangerous_grp_color">#33b5e5</color><color name="dim_foreground_inverse_disabled_holo_light">#80bebebe</color><color name="bright_foreground_dark">@android:color/background_light</color><color name="dim_foreground_light_disabled">#80323232</color><color name="holo_blue_light">#ff33b5e5</color><color name="link_text_holo_light">#0000ee</color><color name="keyguard_avatar_frame_color">#ffffffff</color><color name="background_holo_light">#fff3f3f3</color><color name="keyguard_avatar_frame_pressed_color">#ff35b5e5</color><color name="hint_foreground_holo_dark">#808080</color><color name="link_text_holo_dark">#5c5cff</color><drawable name="status_bar_closed_default_background">#ff000000</drawable><color name="dim_foreground_dark_inverse">#323232</color><color name="highlighted_text_light">#9983CC39</color><color name="kg_widget_pager_gradient">#ffffffff</color><color name="lockscreen_clock_background">#ffffffff</color><color name="dim_foreground_dark">#bebebe</color><color name="safe_mode_text">#80ffffff</color><drawable name="notification_template_icon_bg">#3333B5E5</drawable><color name="search_url_text_pressed">@android:color/black</color><color name="lockscreen_clock_am_pm">#ffffffff</color><color name="dim_foreground_inverse_holo_dark">#323232</color><color name="kg_multi_user_text_inactive">#ff808080</color><color name="search_url_text_selected">@android:color/black</color><color name="background_light">#ffffffff</color><color name="holo_gray_bright">#33CCCCCC</color><color name="suggestion_highlight_text">#177bbd</color><color name="holo_green_light">#ff99cc00</color><color name="group_button_dialog_focused_holo_light">#4699cc00</color><drawable name="screen_background_light">#ffffffff</drawable><color name="dim_foreground_dark_inverse_disabled">#80323232</color><color name="keyguard_text_color_normal">#ffffff</color><color name="hint_foreground_dark">#808080</color><drawable name="safe_mode_background">#60000000</drawable><color name="holo_orange_dark">#ffff8800</color><color name="holo_gray_light">#33999999</color><drawable name="notification_template_icon_low_bg">#0cffffff</drawable><drawable name="screen_background_light_transparent">#80ffffff</drawable><color name="link_text_dark">#5c5cff</color><color name="dim_foreground_disabled_holo_dark">#80bebebe</color><color name="facelock_spotlight_mask">#CC000000</color><color name="bright_foreground_dark_disabled">#80ffffff</color><color name="darker_gray">#aaa</color><color name="search_url_text_normal">#7fa87f</color></file><file path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\values\dimens.xml" qualifiers=""><dimen name="activity_vertical_margin">16dp</dimen><dimen name="activity_horizontal_margin">16dp</dimen></file><file path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\values\strings.xml" qualifiers=""><string name="textViewButtonString">Button sending string</string><string name="buttonName9">9</string><string name="textViewIp">IP address</string><string name="buttonName8">8</string><string name="buttonName7">7</string><string name="buttonName6">6</string><string name="ic_action_settings">Buttons settings</string><string name="buttonName5">5</string><string name="preference_port">preference_port</string><string name="buttonName4">4</string><string name="textButton15">sending string 15</string><string name="buttonName3">3</string><string name="textButton14">sending string 14</string><string name="buttonName2">2</string><string name="buttonName11">11</string><string name="buttonName1">1</string><string name="buttonName10">10</string><string name="buttonName15">15</string><string name="buttonName14">14</string><string name="buttonName13">13</string><string name="buttonName12">12</string><string name="ip_settings">IP settings</string><string name="preference_ip">preference_ip</string><string name="textViewButtonName">Button name</string><string name="action_settings">Settings</string><string name="action_accept">Accept</string><string name="textViewPort">Port</string><string name="app_name">Smart house remote</string><string name="defaultIP">192.168.0.103</string><string name="defaultPort">1153</string><string name="textButton5">sending string 5</string><string name="textButton6">sending string 6</string><string name="textButton7">sending string 7</string><string name="textButton8">sending string 8</string><string name="action_undo">Undo</string><string name="textButton9">sending string 9</string><string name="textButton13">sending string 13</string><string name="textButton12">sending string 12</string><string name="textButton11">sending string 11</string><string name="textButton10">sending string 10</string><string name="textButton1">sending string 1</string><string name="textButton2">sending string 2</string><string name="textButton3">sending string 3</string><string name="textButton4">sending string 4</string></file><file path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style><style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style></file><file path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\values-sw720dp-land\dimens.xml" qualifiers="sw720dp-land-v13"><dimen name="activity_horizontal_margin">128dp</dimen></file><file path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\values-v11\styles.xml" qualifiers="v11"><style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style></file><file path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\main\res\values-v14\styles.xml" qualifiers="v14"><style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+    </style></file></source><source path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\build\generated\res\rs\debug"/><source path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\build\generated\res\generated\debug"/></dataSet><dataSet config="debug"><source path="C:\Users\Void\AndroidstudioProjects\SmartHouseRemote\app\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="GridLayout"><attr name="orientation"><enum name="horizontal" value="0"/><enum name="vertical" value="1"/></attr><attr format="integer" name="rowCount"/><attr format="integer" name="columnCount"/><attr format="boolean" name="useDefaultMargins"/><attr name="alignmentMode"><enum name="alignBounds" value="0"/><enum name="alignMargins" value="1"/></attr><attr format="boolean" name="rowOrderPreserved"/><attr format="boolean" name="columnOrderPreserved"/></declare-styleable><declare-styleable name="GridLayout_Layout"><attr name="android:layout_width"/><attr name="android:layout_height"/><attr name="android:layout_margin"/><attr name="android:layout_marginLeft"/><attr name="android:layout_marginTop"/><attr name="android:layout_marginRight"/><attr name="android:layout_marginBottom"/><attr format="integer" name="layout_row"/><attr format="integer" min="1" name="layout_rowSpan"/><attr format="integer" name="layout_column"/><attr format="integer" min="1" name="layout_columnSpan"/><attr name="layout_gravity"><flag name="top" value="0x30"/><flag name="bottom" value="0x50"/><flag name="left" value="0x03"/><flag name="right" value="0x05"/><flag name="center_vertical" value="0x10"/><flag name="fill_vertical" value="0x70"/><flag name="center_horizontal" value="0x01"/><flag name="fill_horizontal" value="0x07"/><flag name="center" value="0x11"/><flag name="fill" value="0x77"/><flag name="clip_vertical" value="0x80"/><flag name="clip_horizontal" value="0x08"/><flag name="start" value="0x00800003"/><flag name="end" value="0x00800005"/></attr></declare-styleable></configuration></mergedItems></merger>

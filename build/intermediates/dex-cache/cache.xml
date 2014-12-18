@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\y.shlapak\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="C:\Users\y.shlapak\AndroidstudioProjects\SmartHouseRemote\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-ba2bf4fe5df5d0bbea0fb7b97820ec944ab2d89c.jar" />
+    </item>
+    <item
+        jar="C:\Users\y.shlapak\AndroidstudioProjects\SmartHouseRemote\app\build\intermediates\exploded-aar\com.android.support\gridlayout-v7\18.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="dafab6ae358e6c801605d50ff1fa761e77200c1a">
+        <dex dex="C:\Users\y.shlapak\AndroidstudioProjects\SmartHouseRemote\app\build\intermediates\pre-dexed\debug\classes-ce2f0b33f8aba1638a1657dd9d0e03d3f0ed105c.jar" />
+    </item>
+
+</items>

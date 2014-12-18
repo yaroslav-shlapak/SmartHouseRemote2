@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/textViewButtonName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="left"
+            android:text="@string/textViewButtonName"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textViewButtonString"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonName"
+            android:layout_centerHorizontal="true"
+            android:gravity="left"
+            android:text="@string/textViewButtonString"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/buttonName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewButtonName"
+            android:layout_centerHorizontal="true"
+            android:gravity="left"
+            android:inputType="text"
+            android:text="@string/defaultPort"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/buttonString"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewButtonString"
+            android:layout_centerHorizontal="true"
+            android:gravity="left"
+            android:inputType="text"
+            android:text="@string/defaultIP"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="30sp" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+</RelativeLayout>

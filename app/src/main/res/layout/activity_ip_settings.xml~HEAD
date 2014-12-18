@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/textViewIp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="left"
+            android:text="@string/textViewIp"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textViewPort"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ip_address"
+            android:layout_centerHorizontal="true"
+            android:gravity="left"
+            android:text="@string/textViewPort"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/port_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewPort"
+            android:layout_centerHorizontal="true"
+            android:gravity="left"
+            android:inputType="phone"
+            android:text="@string/defaultPort"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/ip_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewIp"
+            android:layout_centerHorizontal="true"
+            android:gravity="left"
+            android:inputType="phone"
+            android:text="@string/defaultIP"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@null"
+            android:textSize="30sp" >
+
+            <requestFocus />
+        </EditText>
+    </RelativeLayout>
+
+</RelativeLayout>
